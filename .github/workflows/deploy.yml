@@ -89,7 +89,7 @@ jobs:
         run: bun install
 
       - name: 🛠 Setup Database
-        run: npx prisma migrate reset --force
+        run: bunx prisma migrate reset --force
 
       - name: ⚙️ Build
         run: bun run build
